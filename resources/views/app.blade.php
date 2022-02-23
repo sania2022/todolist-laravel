@@ -28,7 +28,7 @@
                 </ul>
             </div>
         @endif
-        <form action="{{ url('/todos') }}" method="POST">
+        <form action="/todos" method="POST">
             @csrf
             <input type="text" class="form-control" name="task" placeholder="Add new task">
             <button class="btn btn-primary" type="submit">Store</button>

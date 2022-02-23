@@ -13,5 +13,5 @@ use App\Http\Controllers\Todo;
 |
 */
 
-Route::get('/', [Todo::class, 'index']);
-Route::post('/todos', [Todo::class, 'store']);
+Route::get('/', [Todo::class, 'index'])->name('home');
+Route::post('/todos', [Todo::class, 'store'])->name('todo');

@@ -12,8 +12,6 @@ use App\Http\Controllers\Todo;
 | contains the "web" middleware group. Now create something great!
 |
 */
-if (env('APP_ENV') === 'production') {
-    URL::forceSchema('https');
-}
+
 Route::get('/', [Todo::class, 'index']);
 Route::post('/todos', [Todo::class, 'store']);
